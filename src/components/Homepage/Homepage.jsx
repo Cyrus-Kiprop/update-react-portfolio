@@ -4,6 +4,7 @@ import Header from "../header/Header";
 import Portfolio from "../Portfolio/Portfolio";
 
 import "./Homepage.css";
+import AboutMe from "./AboutMe";
 
 export default function Homepage() {
   return (
@@ -12,6 +13,7 @@ export default function Homepage() {
       <Header />
       <main>
         <Portfolio />
+        <AboutMe />
       </main>
     </div>
   );
