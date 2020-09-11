@@ -1,0 +1,98 @@
+.footer-section {
+  background-image: url(../../assets/images/Vector-14.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  padding: 37px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-sizing: border-box;
+  box-shadow: 0px 7px 15px rgba(95, 104, 186, 0.13);
+  border-radius: 14px;
+  padding: 16px 23px;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #91959e;
+  margin-bottom: 16px;
+}
+
+.message-field {
+  min-height: 185px;
+}
+
+.submit-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button.overall-btn {
+  width: 100%;
+  padding: 23px 23px;
+  border: none;
+  background: #fa4969;
+  border-radius: 60px;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 105.3%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.submit-container > span {
+  margin: 40px 0;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #c5cbfe;
+}
+
+.horizontal-drawer {
+  border: 1px solid #6877ff;
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.copy-right {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #c5cbfe;
+}
