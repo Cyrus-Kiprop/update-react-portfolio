@@ -2,3 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Sora:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sora:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.section_title {
+  font-family: Sora, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 105.3%;
+  color: #4f5461;
+  margin-bottom: 30px;
+}
+
+.overall-btn > a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 105.3%;
+  text-align: center;
+  color: #ffffff;
+}
