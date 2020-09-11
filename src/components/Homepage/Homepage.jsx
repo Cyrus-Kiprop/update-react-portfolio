@@ -5,6 +5,7 @@ import Portfolio from "../Portfolio/Portfolio";
 
 import "./Homepage.css";
 import AboutMe from "./AboutMe";
+import Footer from "../Footer/Footer";
 
 export default function Homepage() {
   return (
@@ -15,6 +16,7 @@ export default function Homepage() {
         <Portfolio />
         <AboutMe />
       </main>
+      <Footer />
     </div>
   );
 }
