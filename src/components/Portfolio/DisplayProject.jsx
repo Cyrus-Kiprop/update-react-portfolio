@@ -4,6 +4,10 @@ import "./DisplayProject.css";
 import projectImg from "../../assets/images/project-preview.svg";
 import { Link } from "react-router-dom";
 
+import img3 from "../../assets/images/image-3.svg";
+import img4 from "../../assets/images/image-4.svg";
+import img5 from "../../assets/images/image-5.svg";
+
 export default function DisplayProject() {
   return (
     <div className="modal-content">
@@ -19,19 +23,19 @@ export default function DisplayProject() {
             <div
               className="project_corousel-image ov-img"
               style={{
-                backgroundImage: `url(../../assets/images/image-3.svg)`,
+                backgroundImage: `url(${img4})`,
               }}
             ></div>
             <div
               className="project_corousel-image ov-img"
               style={{
-                backgroundImage: `url(../../assets/images/image-3.svg)`,
+                backgroundImage: `url(${img4})`,
               }}
             ></div>
             <div
               className="project_corousel-image ov-img"
               style={{
-                backgroundImage: `url(../../assets/images/image-3.svg)`,
+                backgroundImage: `url(${img5})`,
               }}
             ></div>
           </div>

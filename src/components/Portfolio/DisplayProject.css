@@ -73,7 +73,7 @@
 }
 
 .project-description > p {
-  font-family: Sora;
+  font-family: Sora, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

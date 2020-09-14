@@ -41,3 +41,19 @@
 .show {
   display: block;
 }
+
+.modal-btn-close {
+  position: absolute;
+  right: -16px;
+  top: -18px;
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  background: #4456fb;
+  border: none;
+  background-image: url(../../assets/images/cancel.svg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  outline: none;
+}

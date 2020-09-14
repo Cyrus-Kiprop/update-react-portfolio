@@ -4,9 +4,6 @@ import Radium, { StyleRoot } from "radium";
 
 import "./Header.css";
 import fadeInLeft from "react-animations/lib/fade-in-left";
-import flash from "react-animations/lib/flash";
-import fadeIn from "react-animations/lib/fade-in";
-import fadeInUpBig from "react-animations/lib/fade-in-up-big";
 import zoomIn from "react-animations/lib/zoom-in";
 
 const styles = {
