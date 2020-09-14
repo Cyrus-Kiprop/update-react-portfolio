@@ -23,3 +23,23 @@
   text-align: center;
   color: #ffffff;
 }
+
+.stack-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.portfolio__item-stack {
+  background: #4f5461;
+  border-radius: 40px;
+  padding: 5px 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #e6e9f0;
+  font-family: "Poppins", sans-serif;
+  margin: 5px 5px;
+}

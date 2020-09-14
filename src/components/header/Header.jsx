@@ -49,22 +49,22 @@ export default function Header() {
           <p>My works in social networks</p>
           <ul className="header__social_links">
             <li>
-              <i class="fa fa-github" aria-hidden="true"></i>
+              <i className="fa fa-github" aria-hidden="true"></i>
             </li>
             <li>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i className="fa fa-twitter" aria-hidden="true"></i>
             </li>
             <li>
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <i className="fa fa-linkedin" aria-hidden="true"></i>
             </li>
             <li>
-              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i className="fa fa-dribbble" aria-hidden="true"></i>
             </li>
             <li>
-              <i class="fa fa-medium" aria-hidden="true"></i>
+              <i className="fa fa-medium" aria-hidden="true"></i>
             </li>
             <li>
-              <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+              <i className="fa fa-stack-overflow" aria-hidden="true"></i>
             </li>
           </ul>
         </div>

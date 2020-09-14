@@ -1,0 +1,83 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.project__img {
+  width: 100%;
+  min-height: 178.49px;
+  background-size: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.ov-img {
+  background-size: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.project-info {
+  padding: 9px 20px 21px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project__corousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.project_corousel-image {
+  border: 3px solid #f9855b;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.35));
+  border-radius: 6px;
+  min-width: 91px;
+  min-height: 63px;
+}
+
+.project__links {
+  display: flex;
+  background: #fa4969;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__links:hover {
+  background: #ff869c;
+}
+
+.project__links > i {
+  color: white;
+  width: 23px;
+  height: 22px;
+  margin-left: 23px;
+  font-size: 22px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-description > h1 {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 105.3%;
+  color: #4f5461;
+  margin-bottom: 22px;
+}
+
+.project-description > p {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: #737986;
+  margin-top: 22px;
+}

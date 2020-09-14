@@ -4,6 +4,10 @@
   flex-wrap: wrap;
 }
 
+.display__item {
+  /* position: relative; */
+}
+
 .portfolio__item-stack {
   background: #4f5461;
   border-radius: 40px;
@@ -18,7 +22,7 @@
   margin: 5px 5px;
 }
 
-.portfolio__view-item {
+.overall-btn {
   background: #4456fb;
   border-radius: 60px;
   display: flex;
@@ -27,4 +31,15 @@
   max-width: 476px;
   padding: 20px 5px;
   margin: 16px auto 32px;
+}
+
+.overall-btn > a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 105.3%;
+  text-align: center;
+  color: #ffffff;
 }
