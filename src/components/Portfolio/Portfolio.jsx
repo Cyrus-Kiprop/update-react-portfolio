@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import "./Portfolio.css";
@@ -6,11 +6,24 @@ import DisplayModal from "../Modal/DisplayModal";
 import DisplayProject from "./DisplayProject";
 
 export default function Portfolio() {
+  useEffect(() => {});
+
   const [show, setShow] = useState(false);
 
-  const showModal = () => setShow(true);
+  const showModal = (event) => {
+    event.preventDefault();
+    setShow(true);
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${window.scrollY}px`;
+  };
 
-  const hideModal = () => setShow(false);
+  const hideModal = () => {
+    const scrollY = document.body.style.top;
+    document.body.style.position = "";
+    document.body.style.top = "";
+    window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    setShow(false);
+  };
 
   return (
     <section className="portfolio">
@@ -28,11 +41,7 @@ export default function Portfolio() {
           <DisplayModal show={show} handleClose={hideModal}>
             <DisplayProject />
           </DisplayModal>
-          <button
-            type="button"
-            onClick={() => showModal()}
-            className="overall-btn"
-          >
+          <button type="button" onClick={showModal} className="overall-btn">
             See the project
           </button>
         </div>

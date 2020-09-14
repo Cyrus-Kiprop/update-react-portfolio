@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20200915T130000Z
+DTEND:20200915T133000Z
+DTSTAMP:20200914T114933Z
+ORGANIZER;CN=viola@tunga.io:mailto:viola@tunga.io
+UID:4m7n8pkald8k4pq4dso6s8dpv7@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=cyruskiprop254@gmail.com;X-NUM-GUESTS=0:mailto:cyruskiprop254@gmail
+ .com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=viola@tunga.io;X-NUM-GUESTS=0:mailto:viola@tunga.io
+X-MICROSOFT-CDO-OWNERAPPTID:-1692607152
+CREATED:20200914T114929Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nPlease do not edit this section of the descriptio
+ n.\n\nThis event has a video call.\nJoin: https://meet.google.com/xyk-jprn-
+ met\n(ZA) +27 10 823 1046 PIN: 158559419#\nView more phone numbers: https:/
+ /tel.meet/xyk-jprn-met?pin=8170116249950&hs=7\n\nView your event at https:/
+ /www.google.com/calendar/event?action=VIEW&eid=NG03bjhwa2FsZDhrNHBxNGRzbzZz
+ OGRwdjcgY3lydXNraXByb3AyNTRAbQ&tok=MTQjdmlvbGFAdHVuZ2EuaW9kOTliNDY2ZjExOWI3
+ NjhjZTI5Zjk0ZGJhYTAyMmY1MWE2MTNmZjdm&ctz=Africa%2FNairobi&hl=en&es=1.\n-::~
+ :~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ ::~:~::-
+LAST-MODIFIED:20200914T114930Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Joining the Tunga Platform
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
