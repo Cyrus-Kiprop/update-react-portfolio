@@ -73,7 +73,39 @@
   margin-top: 14px;
 }
 
+.header__about-me {
+  max-width: 556px;
+}
+
 .header__social_links > li > i {
   color: #4253f1;
   font-size: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding-top: 161px;
+    background-image: url(../../assets/images/Vector-12.svg);
+    background-position: left bottom;
+    padding-left: 212px;
+  }
+
+  .header__name {
+    font-size: 88px;
+  }
+
+  .header__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__social_links {
+    display: flex;
+    align-items: center !important;
+  }
+
+  .header__social_links > li {
+    margin: 0 18px;
+  }
 }

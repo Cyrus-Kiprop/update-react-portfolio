@@ -17,6 +17,8 @@
   left: 0;
   background: transparent;
   border-radius: 0 30px;
+  margin: 15px;
+  margin-bottom: 30px;
   /* padding: 63px 13px; */
 }
 
@@ -44,11 +46,7 @@
 
 .modal-btn-close {
   position: absolute;
-  right: -16px;
-  top: -18px;
   border-radius: 50%;
-  width: 43px;
-  height: 43px;
   background: #4456fb;
   border: none;
   background-image: url(../../assets/images/cancel.svg);
@@ -56,4 +54,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   outline: none;
+  right: -8px;
+  top: -8px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
+
+@media only screen and (min-width: 768px) {
+  .modal-btn-close {
+    width: 67px;
+    height: 67px;
+    top: -28px;
+    right: -22px;
+  }
+} ;

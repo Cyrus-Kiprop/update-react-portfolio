@@ -5,12 +5,15 @@ import "./navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="navbar" >
-      <Router >
+    <div className="navbar">
+      <Router>
         <div className="navbar_logo">
           <Link to="/home">CK</Link>
         </div>
         <ul className="navlinks">
+          <li className="navlinks_item nav-active">
+            <Link to="/home">Intro</Link>
+          </li>
           <li className="navlinks_item">
             <Link to="/home">Portfolio</Link>
           </li>

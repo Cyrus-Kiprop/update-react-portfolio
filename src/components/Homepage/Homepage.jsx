@@ -9,14 +9,16 @@ import Footer from "../Footer/Footer";
 
 export default function Homepage() {
   return (
-    <div>
+    <div className="homepage_container">
       <Navbar />
-      <Header />
-      <main>
-        <Portfolio />
-        <AboutMe />
-      </main>
-      <Footer />
+      <div className="right-section">
+        <Header />
+        <main>
+          <Portfolio />
+          <AboutMe />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

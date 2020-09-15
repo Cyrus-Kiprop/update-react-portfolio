@@ -1,3 +1,20 @@
+.homepage_container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; */
+}
+
 main {
   padding: 36px 28px 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .homepage_container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  main {
+    padding-left: 212px;
+  }
 }

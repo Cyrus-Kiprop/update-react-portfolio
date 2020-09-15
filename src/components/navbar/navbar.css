@@ -1,55 +1,99 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    right: 0;
-    left: 0;
-    top: 31px;
-    position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  right: 0;
+  left: 0;
+  top: 31px;
+  position: absolute;
 }
 
 .navbar_logo {
-    margin-left: 25px;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background-color: #4456fb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-left: 25px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #4456fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar_logo >  a {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    font-weight: 1000;
-    font-size: 20px;
+.navbar_logo > a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: 1000;
+  font-size: 20px;
 }
-
 
 .navlinks {
-    display: flex;
-    justify-content: space-around;
-    height: 32px;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  height: 32px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-
 .navlinks > li {
-    margin:0 1rem;
+  margin: 0 1rem;
 }
 
 .navlinks > li > a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 16px;
-    display: inline-block;
-font-family: 'Sora', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  font-family: "Sora", sans-serif;
 }
 
+.nav-active {
+  background: #e8effa;
+  border-radius: 40px;
+  padding: 10px 20px;
+  margin-left: -4px !important;
+}
 
+.nav-active > a {
+  color: #4456fb;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 99vh;
+    top: -1;
+  }
+
+  .navbar_logo {
+    margin-left: 0 !important;
+  }
+
+  .navlinks {
+    flex-direction: column;
+    height: auto;
+    margin-top: 2rem;
+    align-items: flex-start;
+  }
+
+  .navlinks > li {
+    /* margin: 0 1rem; */
+    margin-top: 1.5rem;
+  }
+  .navlinks > li > a {
+    color: black;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: #4f5461;
+  }
+}
