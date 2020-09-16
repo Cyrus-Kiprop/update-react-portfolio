@@ -60,7 +60,6 @@
     rgba(0, 0, 0, 0.15) 0%,
     rgba(0, 0, 0, 0) 98.35%
   );
-  /* url(image.png); */
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
   border-radius: 10px;
@@ -68,6 +67,9 @@
   width: 100%;
   margin-bottom: 22px;
   padding: 17px 18px;
+  object-fit: contain !important;
+  background-size: cover !important;
+  background-position: center center !important;
 }
 
 .stack-gutter {
@@ -95,6 +97,18 @@
 .stack-gutter > .overall-btn:hover {
   background: #7cb1ff;
 }
+
+.ReactModal__Content {
+  border: none !important;
+  inset: 2px !important;
+  background: #ffffff;
+  border-radius: 0 30px;
+}
+
+/* .modal-container { */
+/* inset: 12; */
+/* border: none !important; */
+/* } */
 
 @media only screen and (min-width: 992px) {
   .portfolio__item-img {

@@ -11,22 +11,18 @@ export default function DisplayModal({ handleClose, show, children }) {
   const showHideClassName = show ? " show" : " hide fadeOut ";
   return (
     <>
-      <div className={`${showHideClassName} modal-overlay`}></div>
+      {/* <div className={`${showHideClassName} modal-overlay`}></div> */}
       <StyleRoot>
         <div
           className={`${showHideClassName} modal`}
-          style={
-            show
-              ? styles.animationGenerator(1, zoomIn)
-              : styles.animationGenerator(1, fadeOut)
-          }
+          style={styles.animationGenerator(0.5, zoomIn)}
         >
           <section className="modal-main">
             {children}
-            <button
+            {/* <button
               className="modal-btn-close"
               onClick={() => handleClose()}
-            ></button>
+            ></button> */}
           </section>
         </div>
       </StyleRoot>
