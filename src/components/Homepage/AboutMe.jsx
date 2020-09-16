@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Element } from "react-scroll";
 
 import "./AboutMe.css";
 
@@ -37,7 +38,7 @@ export default function AboutMe() {
   const databases = ["MongoDB", "SQlite", "Firebase", "Postgresql"];
 
   return (
-    <section className="about-me">
+    <section id="details" className="about-me">
       <h1 className="section_title">About me</h1>
       <p className="description">
         Hi, I am Cyrus, Nice to meet you! I have been a network engineer, worked

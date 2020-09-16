@@ -5,7 +5,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer-section">
+    <footer id="contacts" className="footer-section">
       <form action="" className="contact-form">
         <div className="user-input">
           <div className="name-email-container">

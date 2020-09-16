@@ -57,11 +57,19 @@
   margin-left: -4px !important;
 }
 
+.navlinks_item {
+  transition: all 0.3s ease-in-out;
+}
+
+.navlinks_item:hover {
+  transform: scale(1.1);
+}
+
 .nav-active > a {
   color: #4456fb;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .navbar {
     position: relative;
     display: flex;
@@ -69,6 +77,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 99vh;
+    width: 20%;
     top: -1;
   }
 

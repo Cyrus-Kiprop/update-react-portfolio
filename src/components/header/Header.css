@@ -82,7 +82,7 @@
   font-size: 25px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .header {
     padding-top: 161px;
     background-image: url(../../assets/images/Vector-12.svg);
@@ -107,5 +107,10 @@
 
   .header__social_links > li {
     margin: 0 18px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .header__name {
+    font-size: 67px;
   }
 }

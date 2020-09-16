@@ -9,12 +9,25 @@ main {
   padding: 36px 28px 60px;
 }
 
-@media only screen and (min-width: 768px) {
-  .homepage_container {
+@media only screen and (min-width: 992px) {
+  /* .homepage_container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+  } */
+  .homepage_container {
+    display: flex;
+  }
+
+  .right-section {
+    width: 80%;
   }
   main {
     padding-left: 212px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    /* padding-left: 0; */
   }
 }

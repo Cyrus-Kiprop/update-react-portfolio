@@ -129,8 +129,17 @@ button.overall-btn {
   .submit-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    /* width: 100%; */
     justify-content: space-between !important;
+  }
+
+  .name-email-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .name-email-container > input {
+    width: 332px;
   }
 
   .submit-container > .overall-btn {
@@ -140,5 +149,16 @@ button.overall-btn {
     flex: 1;
     display: flex;
     justify-content: center;
+  }
+  .footer__social_links {
+    width: auto;
+    margin-left: auto;
+  }
+
+  .footer__social_links > li {
+    margin: 1rem;
+  }
+  .copy-right {
+    margin-left: auto;
   }
 }
