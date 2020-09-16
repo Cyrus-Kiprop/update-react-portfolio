@@ -11,6 +11,10 @@
   max-width: 193px;
 }
 
+.about-me > .overall-btn:hover {
+  background: #7cb1ff;
+}
+
 .my-skills {
   display: grid;
   grid-template-columns: 1fr;

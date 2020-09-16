@@ -10,6 +10,8 @@ export default function Footer() {
     message: "",
   });
 
+  const [disable, setDisabled] = useState(false);
+
   const handleChange = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
@@ -18,6 +20,7 @@ export default function Footer() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setDisabled(true);
 
     const templateId = "lakefire";
 
@@ -39,6 +42,7 @@ export default function Footer() {
         "user_6d4qD668qOXeuT0IZqzRz"
       )
       .then((res) => {
+        setDisabled(false);
         console.log("Email successfully sent!");
       })
       // Handle errors here however you like, or use a React error boundary
@@ -81,7 +85,14 @@ export default function Footer() {
           ></textarea>
         </div>
         <div className="submit-container">
-          <button type="submit" className="overall-btn">
+          <button
+            style={{
+              backgroundColor: disable ? "#FA4969" : "#fa4969",
+            }}
+            disabled={disable}
+            type="submit"
+            className="overall-btn"
+          >
             Get in touch
           </button>
           <span>cyruskiprop254gmail.com</span>

@@ -87,6 +87,15 @@
   color: #ffffff;
 }
 
+.portfolio__item > .overall-btn {
+  background: #4456fb;
+}
+
+.portfolio__item > .overall-btn:hover,
+.stack-gutter > .overall-btn:hover {
+  background: #7cb1ff;
+}
+
 @media only screen and (min-width: 992px) {
   .portfolio__item-img {
     display: flex;

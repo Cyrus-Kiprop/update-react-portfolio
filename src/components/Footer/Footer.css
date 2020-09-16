@@ -150,6 +150,15 @@ button.overall-btn {
     display: flex;
     justify-content: center;
   }
+
+  .submit-container > .overall-btn:hover {
+    background: #ff869c !important;
+  }
+
+  .clicked {
+    background: #ff869c;
+  }
+
   .footer__social_links {
     width: auto;
     margin-left: auto;
