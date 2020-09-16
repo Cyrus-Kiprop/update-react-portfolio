@@ -11,9 +11,8 @@ import zoomIn from "react-animations/lib/zoom-in";
 import projects from "../../data";
 
 export default function Portfolio() {
-  useEffect(() => {});
-
   const [show, setShow] = useState(false);
+  useEffect(() => {});
 
   const showModal = (event) => {
     event.preventDefault();

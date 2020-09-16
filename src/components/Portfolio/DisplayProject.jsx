@@ -1,23 +1,34 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
 import "./DisplayProject.css";
 
 export default function DisplayProject({ handleClose, project }) {
+  const [state, setState] = useState(() => project);
+  const mainImg = useRef();
+
+  const changePhoto = (url) => {
+    const currentImg = mainImg.current;
+    setState({ ...state, url: url });
+    console.log("clicked");
+  };
+
   return (
     <div className="modal-content">
       <div
         className="project__img"
+        ref={mainImg}
         style={{
-          backgroundImage: `url(${project.url})`,
+          backgroundImage: `url(${state.url})`,
         }}
       ></div>
       <div className="project-info">
         <div className="image-show">
           <div className="project__corousel">
-            {project.exUrl.map((url) => {
+            {state.exUrl.map((url) => {
               return (
                 <div
                   className="project_corousel-image ov-img"
+                  onClick={() => changePhoto(url)}
                   style={{
                     backgroundImage: `url(${url})`,
                   }}
