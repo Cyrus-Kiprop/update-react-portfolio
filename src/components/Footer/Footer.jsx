@@ -1,32 +1,87 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Footer.css";
 
 export default function Footer() {
+  const [messages, setMessages] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    event.preventDefault();
+    const { name, value } = event.target;
+    setMessages({ ...messages, [name]: value });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const templateId = "lakefire";
+
+    sendFeedback(templateId, {
+      message_html: messages.message,
+      from_name: messages.name,
+      reply_to: "cyruskiprop254@gmail.com",
+      from_email: messages.email,
+      to_name: "Kiprop",
+    });
+  };
+
+  const sendFeedback = (templateId, variables) => {
+    window.emailjs
+      .send(
+        "lakefire",
+        "template_v3s8gqx",
+        variables,
+        "user_6d4qD668qOXeuT0IZqzRz"
+      )
+      .then((res) => {
+        console.log("Email successfully sent!");
+      })
+      // Handle errors here however you like, or use a React error boundary
+      .catch((err) =>
+        console.error(
+          "Oh well, you failed. Here some thoughts on the error that occured:",
+          err
+        )
+      );
+  };
+
   return (
     <footer id="contacts" className="footer-section">
-      <form action="" className="contact-form">
+      <form onSubmit={handleSubmit} className="contact-form">
         <div className="user-input">
           <div className="name-email-container">
             <input
               type="text"
+              name="name"
               className="input-field"
               placeholder="Full name*"
+              onChange={handleChange}
             />
-            <input type="text" className="input-field" placeholder="Email*" />
+            <input
+              type="text"
+              className="input-field"
+              name="email"
+              onChange={handleChange}
+              placeholder="Email*"
+            />
           </div>
           <textarea
             type="text-area"
             className="input-field message-field"
-            name="w3review"
+            name="message"
+            onChange={handleChange}
             placeholder="Message*"
             rows="4"
             cols="50"
           ></textarea>
         </div>
         <div className="submit-container">
-          <button type="button" className="overall-btn">
+          <button type="submit" className="overall-btn">
             Get in touch
           </button>
           <span>cyruskiprop254gmail.com</span>

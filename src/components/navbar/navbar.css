@@ -51,7 +51,7 @@
 }
 
 .nav-active {
-  background: #e8effa;
+  background-color: #4456fb;
   border-radius: 40px;
   padding: 10px 20px;
   margin-left: -4px !important;
@@ -63,6 +63,7 @@
 
 .navlinks_item:hover {
   transform: scale(1.1);
+  font-size: bolder;
 }
 
 .nav-active > a {
@@ -79,6 +80,9 @@
     height: 99vh;
     width: 20%;
     top: -1;
+  }
+  .nav-active {
+    background: #e8effa;
   }
 
   .navbar_logo {
