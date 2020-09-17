@@ -6,8 +6,6 @@ export default function DisplayProject({ handleClose, project }) {
   const [state, setState] = useState(project);
   const mainImg = useRef();
 
-  // console.log(project);
-
   const changePhoto = (url) => {
     setState({ ...state, url: url });
     console.log('clicked');
