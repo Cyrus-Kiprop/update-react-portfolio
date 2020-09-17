@@ -58,7 +58,7 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             duration={1500}
-            offset={-50}
+            offset={-130}
             onClick={handleActive}
           >
             Portfolio
@@ -71,7 +71,7 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             duration={1500}
-            offset={-50}
+            offset={-130}
             onClick={handleActive}
           >
             About

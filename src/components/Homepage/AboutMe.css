@@ -16,8 +16,8 @@
 }
 
 .my-skills {
-  display: grid;
-  grid-template-columns: 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr; */
 }
 
 .skill-item {
@@ -59,6 +59,22 @@
 
 .skill-item:last-child {
   margin-bottom: 50px;
+}
+@media only screen and (min-width: 572px) {
+  .my-skills {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .skill-item {
+    margin: 10px;
+  }
+  .skill-wrapper {
+    height: 100%;
+    background: #f5f8fd;
+    border-radius: 10px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {

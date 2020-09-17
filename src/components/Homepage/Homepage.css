@@ -20,6 +20,7 @@ main {
 
   .right-section {
     width: 80%;
+    margin-left: auto;
   }
   main {
     padding-left: 212px;

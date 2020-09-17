@@ -143,3 +143,9 @@
     display: none !important;
   }
 }
+
+/* @media (min-wdith: 576px) {
+  .project__img {
+    min-height: 350px !important;
+  }
+} */

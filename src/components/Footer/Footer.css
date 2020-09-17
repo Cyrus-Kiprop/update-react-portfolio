@@ -122,7 +122,7 @@ button.overall-btn {
 
 @media only screen and (min-width: 768px) {
   .footer-section {
-    padding-left: 212px;
+    /* padding-left: 212px; */
     background-image: url(../../assets/images/footer-bg.svg);
     background-position: left top;
   }

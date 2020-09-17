@@ -54,41 +54,47 @@ export default function AboutMe() {
       </div>
 
       <div className="my-skills">
-        <div className="skill-item">
-          <h3 className="skill-title">Languages</h3>
-          <ul>
-            {languages.map((lang) => (
-              <li key={lang}>{lang}</li>
-            ))}
-            <li>Javascript</li>
-          </ul>
+        <div className="skill-wrapper">
+          <div className="skill-item">
+            <h3 className="skill-title">Languages</h3>
+            <ul>
+              {languages.map((lang) => (
+                <li key={lang}>{lang}</li>
+              ))}
+              <li>Javascript</li>
+            </ul>
+          </div>
+        </div>
+        <div className="skill-wrapper">
+          <div className="skill-item">
+            <h3 className="skill-title">Frameworks</h3>
+            <ul>
+              {frameworks.map((frame) => (
+                <li key={frame}>{frame}</li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <div className="skill-item">
-          <h3 className="skill-title">Frameworks</h3>
-          <ul>
-            {frameworks.map((frame) => (
-              <li key={frame}>{frame}</li>
-            ))}
-          </ul>
+        <div className="skill-wrapper">
+          <div className="skill-item">
+            <h3 className="skill-title">Testing</h3>
+            <ul>
+              {testing.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-
-        <div className="skill-item">
-          <h3 className="skill-title">Testing</h3>
-          <ul>
-            {testing.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="skill-item">
-          <h3 className="skill-title">Databases</h3>
-          <ul>
-            {databases.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+        <div className="skill-wrapper">
+          <div className="skill-item">
+            <h3 className="skill-title">Databases</h3>
+            <ul>
+              {databases.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
 

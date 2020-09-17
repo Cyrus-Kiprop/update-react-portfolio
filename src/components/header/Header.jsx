@@ -17,7 +17,7 @@ const styles = {
 export default function Header() {
   return (
     <StyleRoot>
-      <div className="header">
+      <div id="intro" className="header">
         <h1
           className="header__name"
           style={styles.animationGenerator(1, fadeInLeft)}
