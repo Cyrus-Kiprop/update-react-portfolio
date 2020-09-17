@@ -10,7 +10,7 @@ import zoomIn from 'react-animations/lib/zoom-in';
 import projects from '../../data';
 
 export default function Portfolio() {
-  const [state, setState] = useState(() => projects);
+  const [state] = useState(() => projects);
   const [show, setShow] = useState(false);
   useEffect(() => {});
 
