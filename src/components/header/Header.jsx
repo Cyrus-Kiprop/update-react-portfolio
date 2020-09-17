@@ -1,10 +1,9 @@
-import React from "react";
-import { bounce } from "react-animations";
-import Radium, { StyleRoot } from "radium";
+import React from 'react';
+import Radium, { StyleRoot } from 'radium';
 
-import "./Header.css";
-import fadeInLeft from "react-animations/lib/fade-in-left";
-import zoomIn from "react-animations/lib/zoom-in";
+import './Header.css';
+import fadeInLeft from 'react-animations/lib/fade-in-left';
+import zoomIn from 'react-animations/lib/zoom-in';
 
 const styles = {
   animationGenerator: (duration = 1, type, animationName) => {

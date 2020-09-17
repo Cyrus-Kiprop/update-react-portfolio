@@ -122,14 +122,12 @@ button.overall-btn {
 
 @media only screen and (min-width: 768px) {
   .footer-section {
-    /* padding-left: 212px; */
     background-image: url(../../assets/images/footer-bg.svg);
     background-position: left top;
   }
   .submit-container {
     display: flex;
     flex-direction: row;
-    /* width: 100%; */
     justify-content: space-between !important;
   }
 

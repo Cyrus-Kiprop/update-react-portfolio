@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import "./Footer.css";
+import './Footer.css';
 
 export default function Footer() {
   const [messages, setMessages] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
   const [disable, setDisabled] = useState(false);
@@ -22,33 +22,32 @@ export default function Footer() {
     event.preventDefault();
     setDisabled(true);
 
-    const templateId = "lakefire";
+    const templateId = 'lakefire';
 
     sendFeedback(templateId, {
       message_html: messages.message,
       from_name: messages.name,
-      reply_to: "cyruskiprop254@gmail.com",
+      reply_to: 'cyruskiprop254@gmail.com',
       from_email: messages.email,
-      to_name: "Kiprop",
+      to_name: 'Kiprop',
     });
   };
 
   const sendFeedback = (templateId, variables) => {
     window.emailjs
       .send(
-        "lakefire",
-        "template_v3s8gqx",
+        'lakefire',
+        'template_v3s8gqx',
         variables,
-        "user_6d4qD668qOXeuT0IZqzRz"
+        'user_6d4qD668qOXeuT0IZqzRz'
       )
       .then((res) => {
         setDisabled(false);
-        console.log("Email successfully sent!");
+        console.log('Email successfully sent!');
       })
-      // Handle errors here however you like, or use a React error boundary
       .catch((err) =>
         console.error(
-          "Oh well, you failed. Here some thoughts on the error that occured:",
+          'Oh well, you failed. Here some thoughts on the error that occured:',
           err
         )
       );
@@ -87,7 +86,7 @@ export default function Footer() {
         <div className="submit-container">
           <button
             style={{
-              backgroundColor: disable ? "#FA4969" : "#fa4969",
+              backgroundColor: disable ? '#FA4969' : '#fa4969',
             }}
             disabled={disable}
             type="submit"

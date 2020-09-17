@@ -1,7 +1,6 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Homepage from "./Homepage/Homepage";
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Homepage from './Homepage/Homepage';
 
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
       <Router>
         <Switch>
           <Route to="/home">
-            < Homepage />
+            <Homepage />
           </Route>
         </Switch>
       </Router>

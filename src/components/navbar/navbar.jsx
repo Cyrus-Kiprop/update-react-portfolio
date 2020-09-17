@@ -1,16 +1,10 @@
-import React, { useRef } from "react";
-import { NavLink, BrowserRouter as Router } from "react-router-dom";
-import Scroll from "react-scroll";
+import React, { useRef } from 'react';
+import { NavLink } from 'react-router-dom';
+import Scroll from 'react-scroll';
 
-import "./navbar.css";
+import './navbar.css';
 
-const { scrollLink } = Scroll;
 var Link = Scroll.Link;
-var DirectLink = Scroll.DirectLink;
-var Element = Scroll.Element;
-var Events = Scroll.Events;
-var scroll = Scroll.animateScroll;
-var scrollSpy = Scroll.scrollSpy;
 
 export default function Navbar() {
   const introRef = useRef();
@@ -26,10 +20,8 @@ export default function Navbar() {
       portRef.current,
       aboutRef.current,
       contactRef.current,
-    ].map((element) => {
-      element.classList.remove("nav-active");
-    });
-    target.parentNode.classList.add("nav-active");
+    ].map((element) => element.classList.remove('nav-active'));
+    target.parentNode.classList.add('nav-active');
   };
 
   return (

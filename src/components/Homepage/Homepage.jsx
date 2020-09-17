@@ -1,11 +1,11 @@
-import React from "react";
-import Navbar from "../navbar/navbar";
-import Header from "../header/Header";
-import Portfolio from "../Portfolio/Portfolio";
+import React from 'react';
+import Navbar from '../navbar/navbar';
+import Header from '../header/Header';
+import Portfolio from '../Portfolio/Portfolio';
 
-import "./Homepage.css";
-import AboutMe from "./AboutMe";
-import Footer from "../Footer/Footer";
+import './Homepage.css';
+import AboutMe from './AboutMe';
+import Footer from '../Footer/Footer';
 
 export default function Homepage() {
   return (

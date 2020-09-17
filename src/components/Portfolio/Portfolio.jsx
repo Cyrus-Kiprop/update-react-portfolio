@@ -1,14 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
-import Radium, { StyleRoot } from "radium";
-import Modal from "react-modal";
+import React, { useState, useEffect } from 'react';
+import { StyleRoot } from 'radium';
+import Modal from 'react-modal';
 
-import "./Portfolio.css";
+import './Portfolio.css';
 
-import DisplayModal from "../Modal/DisplayModal";
-import DisplayProject from "./DisplayProject";
-import styles from "../animation";
-import zoomIn from "react-animations/lib/zoom-in";
-import projects from "../../data";
+import DisplayProject from './DisplayProject';
+import styles from '../animation';
+import zoomIn from 'react-animations/lib/zoom-in';
+import projects from '../../data';
 
 export default function Portfolio() {
   const [show, setShow] = useState(false);
@@ -17,15 +16,15 @@ export default function Portfolio() {
   const showModal = (event) => {
     event.preventDefault();
     setShow(true);
-    document.body.style.position = "fixed";
+    document.body.style.position = 'fixed';
     document.body.style.top = `-${window.scrollY}px`;
   };
 
   const hideModal = (event) => {
     const scrollY = document.body.style.top;
-    document.body.style.position = "";
-    document.body.style.top = "";
-    window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
     setShow(false);
   };
 
@@ -76,8 +75,6 @@ export default function Portfolio() {
                     return <div className="portfolio__item-stack">{stack}</div>;
                   })}
                 </div>
-                {/* <Modal show={show} handleClose={hideModal}> */}
-                {/* <DisplayProject /> */}
                 <button
                   type="button"
                   onClick={showModal}
@@ -85,7 +82,6 @@ export default function Portfolio() {
                 >
                   See the project
                 </button>
-                {/* </Modal> */}
               </div>
             );
           })}

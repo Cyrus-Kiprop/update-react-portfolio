@@ -1,41 +1,40 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Element } from "react-scroll";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import "./AboutMe.css";
+import './AboutMe.css';
 
 export default function AboutMe() {
   const languages = [
-    "JavaScript (ES5, ES6)",
-    "Ruby",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "SQL",
+    'JavaScript (ES5, ES6)',
+    'Ruby',
+    'HTML5',
+    'CSS3',
+    'SASS',
+    'SQL',
   ];
   const frameworks = [
-    "Ruby on Rails",
-    "React",
-    "Styled components",
-    "Node",
-    "Express",
-    "Bootstrap",
-    "Styled Components",
-    "Tailwind.css",
-    "Animate.css",
+    'Ruby on Rails',
+    'React',
+    'Styled components',
+    'Node',
+    'Express',
+    'Bootstrap',
+    'Styled Components',
+    'Tailwind.css',
+    'Animate.css',
   ];
 
   const testing = [
-    "Rspec",
-    "Shoulda-matcher",
-    "Capybara",
-    "Enzyme",
-    "preact",
-    "Jest",
-    "Mocha",
+    'Rspec',
+    'Shoulda-matcher',
+    'Capybara',
+    'Enzyme',
+    'preact',
+    'Jest',
+    'Mocha',
   ];
 
-  const databases = ["MongoDB", "SQlite", "Firebase", "Postgresql"];
+  const databases = ['MongoDB', 'SQlite', 'Firebase', 'Postgresql'];
 
   return (
     <section id="details" className="about-me">

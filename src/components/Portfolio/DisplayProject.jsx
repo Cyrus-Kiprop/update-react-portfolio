@@ -1,15 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState } from 'react';
 
-import "./DisplayProject.css";
+import './DisplayProject.css';
 
 export default function DisplayProject({ handleClose, project }) {
   const [state, setState] = useState(() => project);
   const mainImg = useRef();
 
   const changePhoto = (url) => {
-    const currentImg = mainImg.current;
     setState({ ...state, url: url });
-    console.log("clicked");
+    console.log('clicked');
   };
 
   return (
@@ -38,14 +37,22 @@ export default function DisplayProject({ handleClose, project }) {
           </div>
           <div>
             <div className="project__links overall-btn">
-              <a target="_blank" href={`${project.live}`}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`${project.live}`}
+              >
                 See live
               </a>
               <i class=" fa fa-github"></i>
             </div>
             <div className=" project__links overall-btn">
-              <a href={project.github} target="_blank">
-                {" "}
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {' '}
                 See source
               </a>
               <i class="fa fa-external-link"></i>
