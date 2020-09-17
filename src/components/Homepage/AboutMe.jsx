@@ -49,7 +49,13 @@ export default function AboutMe() {
         have project you need coded, don't hesitate to contact me.
       </p>
       <div className="overall-btn">
-        <Link to="#">Get my resume</Link>
+        <a
+          href="https://drive.google.com/file/d/1rnuCnVf66xPEyJUoB85AKehP8h7r3gv3/view?usp=sharing"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Get my resume
+        </a>
       </div>
 
       <div className="my-skills">

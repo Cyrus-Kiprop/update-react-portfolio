@@ -4,7 +4,7 @@
   justify-content: space-between;
   right: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   padding: 1rem;
 }
 
@@ -98,6 +98,7 @@
   }
 
   .navlinks > li {
+    /* margin: 0 1rem; */
     margin-top: 1.5rem;
   }
   .navlinks > li > a {
