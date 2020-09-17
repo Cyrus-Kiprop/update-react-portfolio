@@ -100,34 +100,58 @@ export default function Footer() {
 
       <ul className="footer__social_links">
         <li>
-          <Link to="#">
+          <a
+            href="https://github.com/Cyrus-Kiprop"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             <i className="fa fa-github" aria-hidden="true"></i>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="#">
+          <a
+            href="https://twitter.com/kipropJS"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             <i className="fa fa-twitter" aria-hidden="true"></i>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="#">
+          <a
+            href="https://www.linkedin.com/in/kiprop-kemboi"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             <i className="fa fa-linkedin" aria-hidden="true"></i>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="#">
+          <a
+            href="https://dribbble.com/kiprop_kemboi"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             <i className="fa fa-dribbble" aria-hidden="true"></i>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="#">
+          <a
+            href="https://medium.com/@cyrus_kiprop"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             <i className="fa fa-medium" aria-hidden="true"></i>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="#">
+          <a
+            href="https://stackoverflow.com/users/11657709/cyrus-kiprop"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             <i className="fa fa-stack-overflow" aria-hidden="true"></i>
-          </Link>
+          </a>
         </li>
       </ul>
 

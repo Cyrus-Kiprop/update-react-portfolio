@@ -45,22 +45,58 @@ export default function Header() {
           <p>My works in social networks</p>
           <ul className="header__social_links">
             <li>
-              <i className="fa fa-github" aria-hidden="true"></i>
+              <a
+                href="https://github.com/Cyrus-Kiprop"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i className="fa fa-github" aria-hidden="true"></i>
+              </a>
             </li>
             <li>
-              <i className="fa fa-twitter" aria-hidden="true"></i>
+              <a
+                href="https://twitter.com/kipropJS"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i className="fa fa-twitter" aria-hidden="true"></i>
+              </a>
             </li>
             <li>
-              <i className="fa fa-linkedin" aria-hidden="true"></i>
+              <a
+                href="https://www.linkedin.com/in/kiprop-kemboi"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i className="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
             </li>
             <li>
-              <i className="fa fa-dribbble" aria-hidden="true"></i>
+              <a
+                href="https://dribbble.com/kiprop_kemboi"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i className="fa fa-dribbble" aria-hidden="true"></i>
+              </a>
             </li>
             <li>
-              <i className="fa fa-medium" aria-hidden="true"></i>
+              <a
+                href="https://medium.com/@cyrus_kiprop"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i className="fa fa-medium" aria-hidden="true"></i>
+              </a>
             </li>
             <li>
-              <i className="fa fa-stack-overflow" aria-hidden="true"></i>
+              <a
+                href="https://stackoverflow.com/users/11657709/cyrus-kiprop"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i className="fa fa-stack-overflow" aria-hidden="true"></i>
+              </a>
             </li>
           </ul>
         </div>
