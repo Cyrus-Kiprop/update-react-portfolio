@@ -3,8 +3,10 @@ import React, { useRef, useState } from 'react';
 import './DisplayProject.css';
 
 export default function DisplayProject({ handleClose, project }) {
-  const [state, setState] = useState(() => project);
+  const [state, setState] = useState(project);
   const mainImg = useRef();
+
+  // console.log(project);
 
   const changePhoto = (url) => {
     setState({ ...state, url: url });
@@ -40,18 +42,14 @@ export default function DisplayProject({ handleClose, project }) {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={`${project.live}`}
+                href={`${state.live}`}
               >
                 See live
               </a>
               <i class=" fa fa-github"></i>
             </div>
             <div className=" project__links overall-btn">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={state.github} target="_blank" rel="noopener noreferrer">
                 {' '}
                 See source
               </a>

@@ -3,8 +3,11 @@ import image from './assets/images/projects/bookstore-phone.png';
 import img1 from './assets/images/projects/ror-scaffold.png';
 import img2 from './assets/images/projects/ror-social.png';
 
+import { v4 as uuid } from 'uuid';
+
 const projects = [
   {
+    id: uuid(),
     name: 'Well-paid-geek-bot',
     url:
       'https://github.com/Cyrus-Kiprop/update-react-portfolio/raw/master/src/assets/images/projects/slack-notbook.png',
@@ -20,6 +23,7 @@ const projects = [
     github: 'https://github.com/Cyrus-Kiprop/well-paid-geek-bot',
   },
   {
+    id: uuid(),
     name: 'Gaurdian of the Galaxies',
     url:
       'https://github.com/Cyrus-Kiprop/update-react-portfolio/raw/master/src/assets/images/projects/star-wars.png',
@@ -38,6 +42,7 @@ const projects = [
   },
 
   {
+    id: uuid(),
     name: 'Health App',
     url:
       'https://github.com/Cyrus-Kiprop/update-react-portfolio/raw/master/src/assets/images/projects/api-desktop.png',
@@ -72,6 +77,7 @@ const projects = [
   // },
 
   {
+    id: uuid(),
     name: 'Facebook clone Tutorial',
     url:
       'https://github.com/Cyrus-Kiprop/update-react-portfolio/raw/master/src/assets/images/projects/reverse-ror.png',
@@ -93,6 +99,7 @@ const projects = [
     github: 'https://github.com/Cyrus-Kiprop/ror-social-scaffold',
   },
   {
+    id: uuid(),
     name: 'Bookstore (In progress)',
     url: image,
     exUrl: [img1, image, img2],

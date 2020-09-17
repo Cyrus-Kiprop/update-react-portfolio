@@ -18,7 +18,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",
-    "twilio": "^3.49.1"
+    "twilio": "^3.49.1",
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

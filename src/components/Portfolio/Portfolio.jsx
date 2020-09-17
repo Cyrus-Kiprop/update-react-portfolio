@@ -10,12 +10,13 @@ import zoomIn from 'react-animations/lib/zoom-in';
 import projects from '../../data';
 
 export default function Portfolio() {
+  const [state, setState] = useState(() => projects);
   const [show, setShow] = useState(false);
   useEffect(() => {});
 
-  const showModal = (event) => {
+  const showModal = (project, event) => {
     event.preventDefault();
-    setShow(true);
+    setShow(project.id);
     document.body.style.position = 'fixed';
     document.body.style.top = `-${window.scrollY}px`;
   };
@@ -27,13 +28,13 @@ export default function Portfolio() {
     window.scrollTo(0, parseInt(scrollY || '0') * -1);
     setShow(false);
   };
-
+  console.log(state);
   return (
     <StyleRoot>
       <section className="portfolio">
         <h1 className="section_title">My Portfolio</h1>
         <div className="portfolio__items">
-          {projects.map((project) => {
+          {state.map((project) => {
             return (
               <div className="portfolio__item">
                 <div
@@ -56,12 +57,12 @@ export default function Portfolio() {
                     </div>
                     <button
                       type="button"
-                      onClick={showModal}
+                      onClick={(e) => showModal(project, e)}
                       className="overall-btn"
                     >
                       See the project
                     </button>
-                    <Modal isOpen={show}>
+                    <Modal isOpen={show === project.id}>
                       <DisplayProject
                         project={project}
                         handleClose={hideModal}
@@ -77,7 +78,7 @@ export default function Portfolio() {
                 </div>
                 <button
                   type="button"
-                  onClick={showModal}
+                  onClick={(e) => showModal(project, e)}
                   className="overall-btn"
                 >
                   See the project
