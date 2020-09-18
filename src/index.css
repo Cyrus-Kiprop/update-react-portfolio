@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+/* body {
+  max-width: 1440px;
+  border: 1px solid red !important;
+  margin-right: auto !important;
+} */
+
 .section_title {
   font-family: Sora, sans-serif;
   font-style: normal;

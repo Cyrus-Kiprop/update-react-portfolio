@@ -42,10 +42,10 @@ export default function AboutMe() {
         Hi, I am Cyrus, Nice to meet you! I have been a network engineer, worked
         as a teacher in a networking school and worked for a business owner, but
         I discovered that my real passion is software development. I now work as
-        a freelancer as well as a running weekly Node meetups(Virtually). I am
+        a freelancer as well as a running weekly Node meetups (Remotely). I am
         quite confident, naturally curious, and continuously working on
         improving my skills one piece at a time. If you like what you see and
-        have project you need coded, don't hesitate to contact me.
+        have a project you need coded, contact me.
       </p>
       <div className="overall-btn">
         <a
