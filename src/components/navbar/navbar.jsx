@@ -39,7 +39,7 @@ export default function Navbar() {
     <StyleRoot>
       <div className="navbar">
         <div className="navbar_logo">
-          <NavLink to="about">CK</NavLink>
+          <NavLink to="/">CK</NavLink>
         </div>
 
         <div onClick={closeSmNav} className="hamburger-wrapper">
